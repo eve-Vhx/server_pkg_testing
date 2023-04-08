@@ -1,0 +1,10 @@
+<launch>
+	<node pkg="server_pkg_testing" name="server_connecter_node" type="server_connecter.py" output="log" respawn="true"></node>
+	<node pkg="server_pkg_testing" name="nest_charge_node" type="nest_charge.py" output="screen" respawn="true"></node>
+	<node pkg="server_pkg_testing" name="nest_beacon_node" type="nest_beacon.py" output="screen" respawn="true"></node>
+	<node pkg="server_pkg_testing" name="drone_mission_node" type="drone_mission.py" output="screen" respawn="true"></node>
+	<node pkg="server_pkg_testing" name="drone_waypoints_mission_node" type="drone_mission_waypoints.py" output="screen" respawn="true"></node>
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"> 
+     <arg name="port" value="9090"/>
+  	</include>
+</launch>
