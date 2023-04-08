@@ -2,7 +2,9 @@
 
 Step 1) Make sure ROS Melodic or higher is installed on your machine
 Step 2) Download the catkin command line tools (make sure you have pip3 first)
-### sudo pip3 install -U catkin_tools
+
+```sudo pip3 install -U catkin_tools```
+
 Step 2) Setup a catkin workspace for holding the package
 ### 'mkdir -p ~/catkin_ws/src'
 ### 'cd ~/catkin_ws/'
